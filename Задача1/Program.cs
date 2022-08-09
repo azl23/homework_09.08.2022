@@ -3,21 +3,23 @@
 
 int Prompt(string messege)
 {
-    System.Console.Write(messege);           //Ввыводит сообщение
+    Console.Write(messege);           //Ввыводит сообщение
     string readValue = Console.ReadLine();   // Считывает с консоли строку
     int result = int.Parse(readValue);       // Преобразует строку в целое число
     return result;                           // Возвращает результат
 }
+
 int number1 = Prompt("Введите первое число: ");
 int number2 = Prompt("Введите второе число: ");
 
 if (number2 > number1)
 {
-    System.Console.WriteLine($"Число {number2} является больше числа {number1}");
+    Console.WriteLine($"Число {number2} является больше числа {number1}");
 }
 
 else
 {
-    System.Console.WriteLine($"Число {number1} является больше числа {number2}");
+    Console.WriteLine($"Число {number1} является больше числа {number2}");
 }
-
+    }
+}
